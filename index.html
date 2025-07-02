@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FocusFlow - Pomodoro App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>FocusFlow</h1>
+    <div id="timer">25:00</div>
+    <div class="controls">
+      <button onclick="startTimer()">Iniciar</button>
+      <button onclick="resetTimer()">Resetar</button>
+    </div>
+    <div class="music">
+      <label for="music">Som Ambiente:</label>
+      <select id="music" onchange="playMusic()">
+        <option value="">Nenhum</option>
+        <option value="rain">Chuva</option>
+        <option value="forest">Floresta</option>
+        <option value="lofi">Lo-Fi</option>
+      </select>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
